@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gapminder Motion Chart</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Load D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <h1>The Temporal & Hierarchical Simulation</h1>
+
+    <div id="controls">
+        <button id="playBtn">Play</button>
+        <span id="yearLabel">1800</span>
+    </div>
+
+    <!-- Scatter Plot Section -->
+    <h2>The Motion Chart (Scatter Plot)</h2>
+    <div id="scatterChart"></div>
+
+    <!-- Choropleth Map Section -->
+    <h2>The Synchronized Choropleth Map</h2>
+    <div id="mapChart"></div>
+
+    <!-- Hierarchy (Donut/Sunburst) Section -->
+    <h2>Interactive State Controls Hierarchy: World → Continent → Country</h2>
+    <div id="hierarchy"></div>
+
+    <div id="sliderContainer" style="margin-top: 15px;">
+        <svg id="yearSlider" width="600" height="50"></svg>
+    </div>
+
+    <!-- JS files -->
+    <script src="js/motionChart.js"></script>
+    <script src="js/chloropeth.js"></script>
+    <script src="js/hierarchy.js"></script>
+</body>
+
+</html>
