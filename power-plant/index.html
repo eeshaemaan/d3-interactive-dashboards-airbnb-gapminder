@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Power Plant Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <style>
+      /* Container for map and force layout side-by-side */
+      #dashboard-container {
+          display: flex;
+          gap: 20px;
+      }
+
+      #map {
+          flex: 3;
+          border: 1px solid #ccc;
+          padding: 5px;
+      }
+
+      #force {
+          flex: 1;
+          border: 1px solid #ccc;
+          padding: 5px;
+      }
+
+      #timeline {
+          margin-top: 20px;
+          border: 1px solid #ccc;
+          padding: 5px;
+      }
+  </style>
+</head>
+
+<body>
+  <h1>Global Power Plant Dashboard</h1>
+
+  <!-- Main dashboard: Map + Force chart -->
+  <div id="dashboard-container">
+      <div id="map"></div>
+      <div id="force"></div>
+  </div>
+
+  <!-- Timeline below the dashboard -->
+  <div id="timeline"></div>
+
+  <!-- Load JS files -->
+  <script src="js/map.js"></script>
+  <script src="js/force.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
