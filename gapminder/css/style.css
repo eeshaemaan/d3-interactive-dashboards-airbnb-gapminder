@@ -1,0 +1,81 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+
+/* Controls section */
+#controls {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#playBtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#yearLabel {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Scatter Plot Container */
+#scatterChart {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto 30px auto; /* Add bottom margin to separate from map */
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+/* Choropleth Map Container */
+#mapChart {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+/* Hierarchy (Sunburst/Donut) Container */
+#hierarchy {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background: white;
+    border: 5px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+/* Tooltip styling for hierarchy hover */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+}
