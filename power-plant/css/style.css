@@ -1,0 +1,22 @@
+/* Tooltip styling */
+.tooltip {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+/* Layout boxes for map, force chart, timeline */
+#map, #force, #timeline {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    background: #eef7ff;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
